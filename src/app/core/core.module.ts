@@ -15,6 +15,8 @@ import {
   SpinnerService
 } from '.';
 
+import { CustomPreloadingStrategyService } from './services/custom-preloading.strategy.service';
+
 @NgModule({
   imports: [CommonModule],
   declarations: [
@@ -29,7 +31,8 @@ import {
     AuthService,
     DialogService,
     CanDeactivateGuard,
-    SpinnerService
+    SpinnerService,
+    CustomPreloadingStrategyService
   ]
 })
 export class CoreModule {
