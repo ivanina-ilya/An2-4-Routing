@@ -10,10 +10,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { TasksModule } from './tasks/tasks.module';
 import { UsersModule } from './users/users.module';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, FormsModule, CoreModule, TasksModule, UsersModule, AppRoutingModule ],
+  imports: [BrowserModule, FormsModule, CoreModule, TasksModule, UsersModule, AdminModule,
+    AppRoutingModule ],
   providers: [],
   bootstrap: [AppComponent]
 })
