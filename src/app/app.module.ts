@@ -9,10 +9,11 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { TasksModule } from './tasks/tasks.module';
+import { UsersModule } from './users/users.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, FormsModule, CoreModule, TasksModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, CoreModule, TasksModule, UsersModule, AppRoutingModule ],
   providers: [],
   bootstrap: [AppComponent]
 })
