@@ -5,7 +5,8 @@ import {
   AboutComponent,
   MessagesComponent,
   LoginComponent,
-  PathNotFoundComponent
+  PathNotFoundComponent,
+  AuthGuard
 } from './core';
 
 const routes: Routes = [
@@ -16,6 +17,15 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'admin',
+    canLoad: [AuthGuard],
+    loadChildren: 'app/admin/admin.module#AdminModule'
+  },
+  {
+    path: 'users',
+    loadChildren: 'app/users/users.module#UsersModule'
   },
   {
     path: '',

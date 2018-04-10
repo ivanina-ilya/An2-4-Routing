@@ -6,7 +6,7 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { map, delay, tap, catchError } from 'rxjs/operators';
 
-import { SpinnerService } from '../../shared';
+import { SpinnerService } from '../../core';
 import { User } from './../models/user.model';
 import { UserArrayService } from './../services/user-array.service';
 

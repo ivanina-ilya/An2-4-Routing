@@ -1,6 +1,7 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
 import {
   AboutComponent,
   MessagesComponent,
@@ -10,7 +11,8 @@ import {
   AuthService,
   LoginComponent,
   CanDeactivateGuard,
-  DialogService
+  DialogService,
+  SpinnerService
 } from '.';
 
 @NgModule({
@@ -26,7 +28,8 @@ import {
     AuthGuard,
     AuthService,
     DialogService,
-    CanDeactivateGuard
+    CanDeactivateGuard,
+    SpinnerService
   ]
 })
 export class CoreModule {

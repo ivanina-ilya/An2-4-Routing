@@ -9,13 +9,11 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { TasksModule } from './tasks/tasks.module';
-import { UsersModule } from './users/users.module';
-import { AdminModule } from './admin/admin.module';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, FormsModule, CoreModule, TasksModule, UsersModule, AdminModule,
+  imports: [BrowserModule, FormsModule, CoreModule, TasksModule,
     AppRoutingModule,
     SharedModule ],
   providers: [],
