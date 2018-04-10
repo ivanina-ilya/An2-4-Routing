@@ -12,7 +12,7 @@ import { TasksModule } from './tasks/tasks.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, FormsModule, CoreModule, AppRoutingModule, TasksModule],
+  imports: [BrowserModule, FormsModule, CoreModule, TasksModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
