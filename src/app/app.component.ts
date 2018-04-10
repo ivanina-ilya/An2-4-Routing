@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { MessagesService } from './core';
+import { SpinnerService } from './shared';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { MessagesService } from './core';
 })
 export class AppComponent {
   constructor(public messagesService: MessagesService,
+    public spinnerService: SpinnerService,
     private router: Router) {}
 
   onActivate($event) {

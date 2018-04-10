@@ -1,13 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AboutComponent, MessagesComponent, PathNotFoundComponent } from './core';
+import {
+  AboutComponent,
+  MessagesComponent,
+  LoginComponent,
+  PathNotFoundComponent
+} from './core';
 
 const routes: Routes = [
-
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: '',
@@ -28,9 +36,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes)
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

@@ -19,7 +19,10 @@
               <a routerLink="/users">Users</a>
             </li>
             <li routerLinkActive="active">
-                <a routerLink="/admin">Admin</a>
+              <a routerLink="/admin">Admin</a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/login">Login</a>
             </li>
             <li routerLinkActive="active">
               <a routerLink="/about">About</a>
@@ -30,6 +33,7 @@
     </nav>
 
     <div class="container">
+      <app-spinner *ngIf="spinnerService.isVisible()"></app-spinner>
       <div class="col-md-10">
         <router-outlet (activate)='onActivate($event)' (deactivate)='onDeactivate($event)'></router-outlet>
         <!-- Routed views go here -->
